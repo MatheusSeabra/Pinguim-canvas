@@ -37,4 +37,9 @@ ctx.beginPath();
 ctx.moveTo(190, 50);
 ctx.quadraticCurveTo(210, 20, 187, 40);
 ctx.stroke();
-//<ears/>
+
+//Embaixo da orelha 
+ctx.beginPath();
+ctx.moveTo(220, 150);
+ctx.quadraticCurveTo(180, 90, 190, 50);
+ctx.stroke();
