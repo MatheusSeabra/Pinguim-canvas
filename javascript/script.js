@@ -43,3 +43,29 @@ ctx.beginPath();
 ctx.moveTo(220, 150);
 ctx.quadraticCurveTo(180, 90, 190, 50);
 ctx.stroke();
+
+
+ctx.beginPath();
+ctx.moveTo(440, 200);
+ctx.bezierCurveTo(440, 52, 760, 52, 760, 200);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(520, 104);
+ctx.bezierCurveTo(500, 280, 700, 270, 680, 104);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(472, 128);
+ctx.bezierCurveTo(440, 360, 760, 360, 728, 128);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(440, 200);
+ctx.quadraticCurveTo(360,80, 452, 160);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(760, 200);
+ctx.quadraticCurveTo(840, 80, 748, 160);
+ctx.stroke();
