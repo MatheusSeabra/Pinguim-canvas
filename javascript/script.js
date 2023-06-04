@@ -8,15 +8,20 @@ ctx.canvas.height = window.innerHeight;
 //parte de cima da toca
 
 ctx.beginPath();
+ctx.fillStyle = "#406ce6";
 ctx.moveTo(100, 150);
 ctx.quadraticCurveTo(210, 15, 300, 150);
+ctx.lineWidth = 3;
+ctx.fill();
 ctx.stroke();
 
-//parte de baixo touca
+//<parte de baixo touca>
 //linha superior
 ctx.beginPath();
+ctx.fillStyle = "#406ce6";
 ctx.moveTo(97, 150);
 ctx.bezierCurveTo(97, 150, 190,120, 305, 150);
+ctx.fill();
 ctx.stroke();
 
 //linha inferior
@@ -27,21 +32,28 @@ ctx.stroke();
 
 //linha Esquerda 
 ctx.beginPath();
+ctx.fillStyle = "#406ce6";
 ctx.moveTo(90, 185);
 ctx.bezierCurveTo(90, 180, 90, 170, 97, 150);
+ctx.fill();
 ctx.stroke();
 
 ctx.beginPath();
+ctx.fillStyle = "#406ce6";-
 ctx.moveTo(90, 185);
 ctx.lineTo(90, 185);
 ctx.lineTo(95, 185);
+ctx.fill();
 ctx.stroke();
 
 //linha Direita
 ctx.beginPath();
+ctx.fillStyle = "#406ce6";
 ctx.moveTo(305, 180);
 ctx.bezierCurveTo(305, 180, 310, 180, 305, 150);
+ctx.fill();
 ctx.stroke();
+//</parte de baixo touca>
 //</touca>
 
 //<dentro da touca>
@@ -49,9 +61,10 @@ ctx.stroke();
 ctx.beginPath();
 ctx.moveTo(115, 175);
 ctx.bezierCurveTo(115, 175, 110, 173, 120, 145);
+ctx.fill();
+ctx.stroke();
 
 //linha 2
-ctx.stroke();
 ctx.beginPath();
 ctx.moveTo(140, 174);
 ctx.bezierCurveTo(140, 174, 130, 173, 145, 140);
@@ -132,27 +145,36 @@ ctx.stroke();
 //parte exterior
 //parte superior
 ctx.beginPath();
+ctx.fillStyle = "#ffbf00";
 ctx.moveTo(145, 250);
 ctx.bezierCurveTo(165, 210, 180, 165, 220, 250);
+ctx.lineWidth = 3;
+ctx.fill();
 ctx.stroke();
 
 //parte interior
 ctx.beginPath();
+ctx.fillStyle = "#ffbf00";
 ctx.moveTo(145, 250);
 ctx.bezierCurveTo(150, 250, 170, 295, 220, 250);
+ctx.fill();
 ctx.stroke();
 
 //parte interior
 //parte superior
 ctx.beginPath();
+ctx.fillStyle = "#ff5a6a";
 ctx.moveTo(155, 250);
 ctx.bezierCurveTo(165, 210, 205, 220, 210, 250);
+ctx.fill();
 ctx.stroke();
 
 //parte inferior
 ctx.beginPath();
+ctx.fillStyle = "#ff5a6a";
 ctx.moveTo(155, 250);
 ctx.bezierCurveTo(155, 250, 175, 275, 210, 250);
+ctx.fill();
 ctx.stroke();
 
 //</rosto>
@@ -169,8 +191,8 @@ ctx.stroke();
     
 //linha exterior
 ctx.beginPath();
- ctx.moveTo(75, 330);
- ctx.bezierCurveTo(75, 330, 67, 320, 90, 270);
+ctx.moveTo(75, 330);
+ctx.bezierCurveTo(75, 330, 67, 320, 90, 270);
 ctx.stroke();
 
 //alça Direita
@@ -185,12 +207,11 @@ ctx.beginPath();
 ctx.moveTo(295, 330);
 ctx.bezierCurveTo(295, 330, 280, 300, 340, 265);
 ctx.stroke();
-
+//alça Direita
 ctx.beginPath();
 ctx.moveTo(340, 265);
 ctx.bezierCurveTo(340, 265, 340, 250, 320, 250);
 ctx.stroke();
-//alça Direita
 //</alça>
 
 //braço Esquerda
@@ -237,3 +258,28 @@ ctx.lineTo(385, 330);
 ctx.stroke();
 //</corpo>
 //</rosto>
+//<acabamento do rosto>
+//inferior detalhe direita
+ctx.beginPath();
+ctx.moveTo(290, 275);
+ctx.bezierCurveTo(290, 260, 270, 240, 270, 240);
+ctx.stroke();
+//superior detalhe direita
+ctx.beginPath();
+ctx.arc(240, 212, 40, 3, 2.25 * Math.PI);
+ctx.stroke();
+//inferior detalhe esquerda
+ctx.beginPath();
+ctx.moveTo(100, 330);
+ctx.bezierCurveTo(95, 330, 95, 300, 110, 280);
+ctx.stroke();
+//meio
+ctx.beginPath();
+ctx.moveTo(110, 280);
+ctx.bezierCurveTo(94, 275, 94, 250, 100, 244);
+ctx.stroke();
+//superior detalhe esquerdo
+ctx.beginPath();
+ctx.arc(125, 218, 39, 2.37, 1.97 * Math.PI);
+ctx.stroke();
+//</acabento do rosto)
