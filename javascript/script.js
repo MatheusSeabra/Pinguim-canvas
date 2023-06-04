@@ -258,6 +258,7 @@ ctx.lineTo(385, 330);
 ctx.stroke();
 //</corpo>
 //</rosto>
+
 //<acabamento do rosto>
 //inferior detalhe direita
 ctx.beginPath();
